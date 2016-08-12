@@ -1,0 +1,22 @@
+#{set title:'A decorated page' /}
+
+This content will be decorated. decorator（母版）文件 simpledesign.html的代码为：
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>#{get 'title' /}</title>
+<link rel="stylesheet" type="text/css"
+	href="@{'/public/stylesheets/main.css'}" />
+</head>
+<body>
+	<h1>#{get 'title' /}</h1>
+	#{doLayout /}
+	<div class="footer">Built with the play! framework</div>
+<h1>Client${client?.ip}</h1>
+<h1>Client${client?.ip.raw()}</h1>
+<a href="@{Application.index}">快速注册</a>
+<a href="/ ">快速注册</a>
+#{index}
+	hello
+#{/index}
+</body>
+</html>

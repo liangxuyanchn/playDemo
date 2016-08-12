@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>签到日历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="jquery-2.0.js"></script>
+<link rel="stylesheet" type="text/css" href="sign.css"/>
+<script type="text/javascript" src="calendar.js"></script>
+<script type="text/javascript">
+$(function(){
+  //ajax
+  var signList=[{"signDay":"10"},{"signDay":"11"},{"signDay":"12"},{"signDay":"13"}];
+  calUtil.init(signList);
+});
+</script>
+</head>
+<body>
+<div style="width:300px;height:300px;" id="calendar">
+	时间
+	
+#{doBody/}!	
+</div>
+</body>
+</html>
+ 
